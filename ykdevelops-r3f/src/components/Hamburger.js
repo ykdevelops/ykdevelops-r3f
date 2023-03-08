@@ -4,9 +4,9 @@ import '../styles/navbar.css';
 export default function Hamburger() {
     return (
         <div className='hamburger'>
-            <a href="/about">About</a>
-            <a href="/resume">Resume</a>
-            <a href="/prrojects">Projects</a>
+            <a className='dropdown-link' href="/about">About</a>
+            <a className='dropdown-link' href="/resume">Resume</a>
+            <a className='dropdown-link' href="/prrojects">Projects</a>
         </div>
     )
 }

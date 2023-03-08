@@ -6,18 +6,20 @@ export default function Navbar() {
     const [showHamburger, setShowHamburger] = useState(false);
     const [showNavbar, setShowNavbar] = useState(true);
     const timerRef = useRef(null);
+    const [title, setTitle] = useState('Youssef Khalil');
+    const [isYkDevelops, setIsYkDevelops] = useState(false);
 
     const handleDropdownClick = () => {
         setShowHamburger(!showHamburger);
     };
 
-    const handleMouseMove = (event) => {
-        const y = event.clientY;
-        setShowNavbar(y <= 100);
+    const handleMouseMove = () => {
+        setShowNavbar(true);
         clearTimeout(timerRef.current);
         timerRef.current = setTimeout(() => {
             setShowNavbar(false);
-        }, 1000);
+            setShowHamburger(false);
+        }, 5000);
     };
 
     useEffect(() => {
@@ -26,6 +28,19 @@ export default function Navbar() {
             window.removeEventListener('mousemove', handleMouseMove);
         };
     }, []);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsYkDevelops((prevIsYkDevelops) => !prevIsYkDevelops);
+        }, 5000);
+        return () => {
+            clearTimeout(timer);
+        };
+    }, [isYkDevelops]);
+
+    useEffect(() => {
+        setTitle(isYkDevelops ? 'Ykdevelops' : 'Youssef Khalil');
+    }, [isYkDevelops]);
 
     const navbarStyle = {
         transform: `translateY(${showNavbar ? 0 : '-100%'})`,
@@ -36,11 +51,13 @@ export default function Navbar() {
         <div className='navbar' style={navbarStyle}>
             <div className='mid-section'>
                 <div className='title-row'>
-                    <div className='head-title'>Youssef Khalil</div>
+                    <a href='/' className='head-title'>
+                        {title}
+                    </a>
                 </div>
                 <div className='head-dropdown' onClick={handleDropdownClick}>
                     <div className='ham-icon'></div>
-                    <div className={`hamburger-menu ${showHamburger ? "open" : ""}`}>
+                    <div className={`hamburger-menu ${showHamburger ? 'open' : ''}`}>
                         <Hamburger />
                     </div>
                 </div>
