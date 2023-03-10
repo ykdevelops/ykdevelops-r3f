@@ -13,22 +13,6 @@ export default function Navbar() {
         setShowHamburger(!showHamburger);
     };
 
-    const handleMouseMove = () => {
-        setShowNavbar(true);
-        clearTimeout(timerRef.current);
-        timerRef.current = setTimeout(() => {
-            setShowNavbar(false);
-            setShowHamburger(false);
-        }, 5000);
-    };
-
-    useEffect(() => {
-        window.addEventListener('mousemove', handleMouseMove);
-        return () => {
-            window.removeEventListener('mousemove', handleMouseMove);
-        };
-    }, []);
-
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsYkDevelops((prevIsYkDevelops) => !prevIsYkDevelops);
