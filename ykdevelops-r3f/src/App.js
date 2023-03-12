@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from './components/Navbar';
-import CanvasR3F from './components/CanvasR3F';
+import CanvasR3F from './components/Canvas/CanvasR3F';
 import About from './components/About';
 import Resume from './components/Resume.js';
 import Projects from './components/Projects';
 import ComingSoon from './components/ComingSoon';
 import NotFound from './components/NotFound';
+import LoaderMain from './components/LoaderMain'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -39,12 +40,27 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading time
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
     <React.StrictMode>
-      <Navbar />
-      <RouterProvider router={router}>
 
-      </RouterProvider>
+      {loading ? (
+        <LoaderMain />
+      ) : (
+        <div>
+          <Navbar />
+          <RouterProvider router={router} />
+        </div>
+
+      )}
     </React.StrictMode>
   );
 }

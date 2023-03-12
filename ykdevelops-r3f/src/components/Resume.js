@@ -6,7 +6,7 @@ export default function Resume() {
             <iframe
                 src={currentFile}
                 title="Resume PDF"
-                style={{ paddingTop: '50px', width: '100%', height: '100vh', border: 'none', backgroundColor: '#323639' }}
+                style={{ paddingTop: '100px', width: '100vw', height: '100vh', border: 'none', backgroundColor: '#323639' }}
             />
         </div>
     )
