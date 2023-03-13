@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import * as THREE from 'three';
-import url from "../../assets/videos/vscode-ykdevelops.mov";
-export default function VscodeVideo() {
+import url from "../../assets/videos/cyberpunk.mp4";
+export default function WindowBack() {
     const [video] = useState(() => {
         const vid = document.createElement("video");
         vid.src = url;
@@ -13,8 +13,8 @@ export default function VscodeVideo() {
     });
 
     return (
-        <mesh position={[-1.372, -0.01, 0.465]} rotation={[0, 0.45, 0]}>
-            <planeGeometry args={[0.5, 1.01]} />
+        <mesh position={[0.5, 0, -1]} rotation={[0, 0, 0]}>
+            <planeGeometry args={[9, 6]} />
             <meshStandardMaterial side={THREE.DoubleSide}>
                 <videoTexture attach="map" args={[video]} />
             </meshStandardMaterial>

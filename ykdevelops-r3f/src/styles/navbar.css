@@ -34,7 +34,8 @@
   justify-content: center;
   width: 300px;
   color: rgb(255, 255, 255);
-  transform: translateY(-3px);
+
+  font-family: "Orbitron", sans-serif;
 }
 .head-dropdown {
   width: 100%;

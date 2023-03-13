@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "ykdevelops-r3f"
-  }
+  },
+  "targets": {
+    "ykdevelops-r3f": {
+      "hosting": {
+        "version-1": [
+          "ykdevelops-r3f"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

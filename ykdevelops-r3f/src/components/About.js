@@ -1,8 +1,8 @@
 import React from 'react'
-import '../styles/about.css'
 import Loader from './Load'
+import ComingSoon from './ComingSoon'
 export default function About() {
     return (
-        <div className='center'><Loader /></div>
+        <ComingSoon />
     )
 }

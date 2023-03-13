@@ -6,7 +6,8 @@ export default function Hamburger() {
         <div className='hamburger'>
             <a className='dropdown-link' href="/about">About</a>
             <a className='dropdown-link' href="/resume">Resume</a>
-            <a className='dropdown-link' href="/prrojects">Projects</a>
+            <a className='dropdown-link' href="/projects">Projects</a>
+            <a className='dropdown-link' href="/">Studio</a>
         </div>
     )
 }

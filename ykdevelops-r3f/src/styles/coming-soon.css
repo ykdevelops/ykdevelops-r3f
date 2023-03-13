@@ -1,0 +1,7 @@
+.coming-soon-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+}

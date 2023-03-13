@@ -1,7 +1,7 @@
 import React from 'react'
-
+import '../styles/coming-soon.css'
 export default function ComingSoon() {
     return (
-        <div>coming-soon</div>
+        <div className='coming-soon-page'>Coming Soon</div>
     )
 }

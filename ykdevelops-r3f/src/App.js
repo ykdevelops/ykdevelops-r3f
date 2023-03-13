@@ -40,27 +40,13 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulate loading time
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
 
   return (
     <React.StrictMode>
-
-      {loading ? (
-        <LoaderMain />
-      ) : (
-        <div>
-          <Navbar />
-          <RouterProvider router={router} />
-        </div>
-
-      )}
+      <div>
+        <Navbar />
+        <RouterProvider router={router} />
+      </div>
     </React.StrictMode>
   );
 }
