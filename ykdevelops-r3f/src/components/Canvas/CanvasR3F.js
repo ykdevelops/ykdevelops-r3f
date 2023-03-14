@@ -10,7 +10,6 @@ import { Canvas } from '@react-three/fiber'
 import { Bounds, useBounds, OrbitControls, useGLTF } from '@react-three/drei'
 import WindowBack from './WindowBack';
 import LoaderMain from '../LoaderMain';
-import VscodeVideo2 from '../Canvas/VscodeVideo2'
 // This component wraps children in a group with a click handler
 // Clicking any object will refresh and fit bounds
 function SelectToZoom({ children }) {
@@ -81,9 +80,8 @@ export default function CanvasR3F() {
                                 <ChromeDev />
                                 <GithubVideo />
                                 <YoutubeVideo />
-
                                 <Resume />
-                                <VscodeVideo2 />
+                                <VscodeVideo />
                             </SelectToZoom>
                         </Bounds>
                     </Suspense>
