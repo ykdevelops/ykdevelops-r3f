@@ -3,8 +3,8 @@ import '../styles/loaderMain.css'
 
 export default function LoaderMain() {
     return (
-        <div class="loader-page">
-            <span class="loader"></span>
+        <div className="loader-page">
+            <span className="loader"></span>
         </div>
 
     )
