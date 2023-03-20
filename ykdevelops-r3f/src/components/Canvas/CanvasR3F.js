@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState, Suspense, useCallback } from 'react';
-import myModel from '../../assets/models/deskScene12.glb';
+import myModel from '../../assets/models/deskScene13.gltf';
 import '../../styles/loader.css'
 import Resume from './Resume'
 import GithubVideo from './GithubVideo';
