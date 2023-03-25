@@ -13,14 +13,7 @@ export default function Navbar() {
         setShowHamburger(!showHamburger);
     };
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsYkDevelops((prevIsYkDevelops) => !prevIsYkDevelops);
-        }, 5000);
-        return () => {
-            clearTimeout(timer);
-        };
-    }, [isYkDevelops]);
+
 
     useEffect(() => {
         setTitle(isYkDevelops ? 'Ykdevelops' : 'Youssef Khalil');
