@@ -13,19 +13,21 @@ export default function Navbar() {
         setShowHamburger(!showHamburger);
     };
 
-
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsYkDevelops((prevIsYkDevelops) => !prevIsYkDevelops);
+        }, 5000);
+        return () => {
+            clearTimeout(timer);
+        };
+    }, [isYkDevelops]);
 
     useEffect(() => {
         setTitle(isYkDevelops ? 'Ykdevelops' : 'Youssef Khalil');
     }, [isYkDevelops]);
 
-    const navbarStyle = {
-        transform: `translateY(${showNavbar ? 0 : '-100%'})`,
-        transition: 'transform 0.3s ease',
-    };
-
     return (
-        <div className='navbar' style={navbarStyle}>
+        <div className='navbar'>
             <div className='mid-section'>
                 <div className='title-row'>
                     <a href='/' className='head-title'>

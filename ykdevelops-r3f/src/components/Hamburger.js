@@ -6,6 +6,7 @@ export default function Hamburger() {
     // Get the current URL path and extract the last part
     const path = window.location.pathname;
     let active = path.split('/').pop();
+    console.log("this is active:" + active);
     if (active === "") {
         active = 'studio';
     }
