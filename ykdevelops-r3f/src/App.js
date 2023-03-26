@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from './components/Navbar';
 import CanvasR3F from './components/Canvas/CanvasR3F';
 import About from './components/About';
@@ -6,46 +7,23 @@ import Resume from './components/Resume.js';
 import Projects from './components/Projects';
 import ComingSoon from './components/ComingSoon';
 import NotFound from './components/NotFound';
-import LoaderMain from './components/LoaderMain'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <CanvasR3F />,
-    errorElement: <NotFound />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-    errorElement: <NotFound />,
-  },
-  {
-    path: "/resume",
-    element: <Resume />,
-    errorElement: <NotFound />,
-  },
-  {
-    path: "/projects",
-    element: <Projects />,
-    errorElement: <NotFound />,
-  },
-  {
-    path: "/comingSoon",
-    element: <ComingSoon />,
-  },
-]);
+import LoaderMain from './components/LoaderMain';
 
 function App() {
-
   return (
     <React.StrictMode>
       <div>
-        <Navbar />
-        <RouterProvider router={router} />
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<CanvasR3F />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/comingSoon" element={<ComingSoon />} />
+            <Route element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
       </div>
     </React.StrictMode>
   );

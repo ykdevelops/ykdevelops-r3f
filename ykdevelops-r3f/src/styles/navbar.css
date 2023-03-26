@@ -1,3 +1,8 @@
+@media only screen and (max-width: 600px) {
+  .head-title {
+    font-size: 20px !important;
+  }
+}
 .navbar {
   position: fixed;
   top: 0;
@@ -34,44 +39,40 @@
   justify-content: center;
   width: 300px;
   color: rgb(255, 255, 255);
-
   font-family: "Orbitron", sans-serif;
 }
 .head-dropdown {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  transform: translate(-10px, -49px);
 }
 .hamburger {
   right: 0;
-  height: 200px;
-  width: 150px;
+  width: 200px;
   display: flex;
-  flex-direction: column;
   position: absolute;
   background-color: #333;
   transform: translateY(0px);
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.ham-icon {
-  background-image: url(/src/assets/icons/menu.svg);
-  height: 20px;
-  width: 20px;
-  transform: translate(-10px, -35px);
-}
+
 a {
   text-decoration: none;
 }
 .hamburger-menu {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.1s ease, visibility 0.1s ease;
 }
 
 .hamburger-menu.open {
   opacity: 1;
   visibility: visible;
+  transform: translateY(49px);
 }
 .fade-in-out {
   opacity: 0;
@@ -92,22 +93,37 @@ a {
   color: white;
   text-decoration: none;
   font-size: 20px;
-  width: 150px;
+  width: 90%;
   height: 50px;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  margin: 10px;
+}
+.ham-icon {
+  background-image: url(/src/assets/icons/menu.svg);
+  height: 23px;
+  width: 23px;
+  transform: translateY(12px);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.ham-icon-active {
+  background-image: url(/src/assets/icons/menu.svg);
+  height: 23px;
+  width: 23px;
+  transform: translateY(12px);
+  box-shadow: 0 0 10px rgb(135, 135, 135);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .dropdown-link.active {
-  background-color: #f8f8f8;
-  color: black;
+  background-color: rgba(255, 255, 255, 0.16);
+  color: white;
   text-decoration: none;
   font-size: 20px;
-  width: 100%;
-  height: 50px;
   display: flex;
   align-items: center;
-  border-radius: 5%;
+  border-radius: 10px;
 }
 .ham-item {
   padding-left: 1rem;

@@ -1,16 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../styles/navbar.css';
-import Hamburger from './Hamburger';
+import HamburgerList from './HamburgerList';
+import Hamburger from 'hamburger-react'
 
 export default function Navbar() {
-    const [showHamburger, setShowHamburger] = useState(false);
+    const [isOpen, setOpen] = useState(false)
     const [showNavbar, setShowNavbar] = useState(true);
     const timerRef = useRef(null);
     const [title, setTitle] = useState('Youssef Khalil');
     const [isYkDevelops, setIsYkDevelops] = useState(false);
+    const [isActive, setIsActive] = useState(false);
 
     const handleDropdownClick = () => {
-        setShowHamburger(!showHamburger);
+        setOpen(!isOpen);
+        setIsActive(!isActive);
     };
 
     useEffect(() => {
@@ -34,10 +37,13 @@ export default function Navbar() {
                         {title}
                     </a>
                 </div>
-                <div className='head-dropdown' onClick={handleDropdownClick}>
-                    <div className='ham-icon'></div>
-                    <div className={`hamburger-menu ${showHamburger ? 'open' : ''}`}>
-                        <Hamburger />
+                <div className='head-dropdown'>
+                    <div
+                        className={`ham-icon ${isActive ? 'ham-icon-active' : ''}`}
+                        onClick={() => handleDropdownClick()}
+                    />
+                    <div className={`hamburger-menu ${isOpen ? 'open' : ''}`}>
+                        <HamburgerList />
                     </div>
                 </div>
             </div>
