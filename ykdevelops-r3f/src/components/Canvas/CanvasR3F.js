@@ -8,7 +8,7 @@ import VscodeVideo from './VscodeVideo';
 import ChromeDev from './ChromeDev.js';
 import { Canvas } from '@react-three/fiber'
 import { Bounds, useBounds, OrbitControls, useGLTF } from '@react-three/drei'
-import WindowBack from './WindowBack';
+import WindowBack from './WindowBackImage';
 import LoaderMain from '../LoaderMain';
 // This component wraps children in a group with a click handler
 // Clicking any object will refresh and fit bounds
