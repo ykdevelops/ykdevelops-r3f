@@ -1,5 +1,5 @@
 import React from 'react';
-import img from "../../assets/videos/resume2.png";
+import img from "../../assets/videos/resume.jpg";
 import { useLoader } from '@react-three/fiber';
 import * as THREE from 'three';
 
