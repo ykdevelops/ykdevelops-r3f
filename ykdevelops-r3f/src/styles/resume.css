@@ -1,0 +1,11 @@
+.resume-page {
+  width: 100vw;
+  height: 100vh;
+}
+.resumeFrame {
+  padding-top: 50px;
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  background-color: #323639;
+}
