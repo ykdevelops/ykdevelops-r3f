@@ -132,7 +132,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     background-color: #f9f9f9;
-    min-height: 100vh;
+    height: 100vh;
     min-width: 100vw;
     top: 0;
     left: 0;
@@ -179,6 +179,11 @@ h1 {
     width: 400px;
     height: 550px;
     z-index: 2;
+  }
+  .loading-image {
+    background-color: grey;
+    width: 400px;
+    height: 550px;
   }
   .headshot-row {
     width: 100%;

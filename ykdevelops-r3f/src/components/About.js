@@ -4,13 +4,16 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaYoutubeSquare } from "react-icons/fa";
+import { Suspense } from 'react';
 
 const About = () => {
     return (
         <div className='about-page'>
 
             <div className='headshot-row'>
-                <img className='headshot' src="/headshot.jpeg" alt="" />
+                <Suspense fallback={<div className='loading-image'></div>}>
+                    <img className='headshot' src="/headshot.jpeg" alt="headshot" />
+                </Suspense>
                 <h2 className='welcome-statement'>
                     <div>Hello,</div>
                     <div>I'm Youssef!</div>
