@@ -1,143 +1,16 @@
-.about-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f9f9f9;
-  min-height: 100vh;
-  min-width: 100vw;
-  top: 0;
-  left: 0;
-  position: absolute;
-  padding-top: 150px;
-}
-.about-me-column {
-  margin-bottom: 0;
-  text-align: center;
-  width: 100%;
-  max-width: 1000px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-bottom: 60px;
-}
-.about-me {
-  font-size: 6.5rem;
-}
-.welcome-statement {
-  font-size: 3.5rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  /* transform: translate(150px, -430px); */
-  z-index: 3;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-left: 2rem;
-  padding-top: 3rem;
-}
-.description-text {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  width: 100%;
-  max-width: 550px;
-  font-size: 2rem;
-  text-align: start;
-  /* transform: translateY(-80px); */
-}
-.headshot {
-  width: 400px;
-  height: 550px;
-  z-index: 2;
-}
-.headshot-row {
-  width: 100%;
-  max-width: 1000px;
-  display: flex;
-  flex-direction: row;
-}
-.yellow-box {
-  width: 900px;
-  height: 900px;
-  background-color: #f0c419;
-  transform: translate(0px, -250px);
-  z-index: 1;
-  display: flex;
-
-  align-items: center;
-  flex-direction: row;
-}
-.yellow-box-row {
-  max-width: 600px;
-  width: 100%;
-}
-h1 {
-  padding: 0;
-  margin: 0;
-  font-size: 6.5rem;
-}
-.about-social-icon {
-  width: 3rem;
-  height: 3rem;
-  margin: 0px 20px 0px 20px;
-  fill: black;
-}
-.about-social-icon:hover {
-  width: 3rem;
-  height: 3rem;
-  margin: 0px 20px 0px 20px;
-  fill: black;
-  background-color: #f0d460;
-  border-radius: 5%;
-  box-shadow: 0 0 5px 0px rgba(67, 67, 67, 0.8);
-}
-.icon-row {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 1rem;
-  cursor: pointer;
-}
-.icon-column {
-  display: flex;
-  flex-direction: column;
-  width: 250px;
-  height: 100%;
-  justify-content: flex-end;
-  padding-bottom: 3rem;
-  /* transform: translate(10px, -80px); */
-}
-.icon-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.black-bar-3 {
-  width: 5px;
-  height: 90px;
-  background-color: black;
-  transform: translate(-33rem, -60rem);
-  position: relative;
-}
-.black-bar-4 {
-  width: 90px;
-  height: 5px;
-  background-color: black;
-  transform: translate(-30.33rem, -60rem);
-  position: relative;
-}
-
-@media only screen and (max-width: 1250px) {
+@media only screen and (min-width: 701px) {
   .about-page {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f9f9f9;
+    background-color: white;
     height: 100vh;
-    min-width: 100vw;
+    width: 100vw;
     top: 0;
     left: 0;
     position: absolute;
     padding-top: 150px;
+    border: none;
   }
   .about-me-column {
     margin-bottom: 0;
@@ -180,6 +53,137 @@ h1 {
     height: 550px;
     z-index: 2;
   }
+  .headshot-row {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+  }
+  .yellow-box {
+    width: 900px;
+    height: 900px;
+    background-color: #f0c419;
+    transform: translate(0px, -250px);
+    z-index: 1;
+    display: flex;
+
+    align-items: center;
+    flex-direction: row;
+  }
+  .yellow-box-row {
+    max-width: 600px;
+    width: 100%;
+  }
+  h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 6.5rem;
+  }
+  .about-social-icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0px 20px 0px 20px;
+    fill: black;
+  }
+  .about-social-icon:hover {
+    width: 3rem;
+    height: 3rem;
+    margin: 0px 20px 0px 20px;
+    fill: black;
+    background-color: #f0d460;
+    border-radius: 5%;
+    box-shadow: 0 0 5px 0px rgba(67, 67, 67, 0.8);
+  }
+  .icon-row {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+    cursor: pointer;
+  }
+  .icon-column {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100%;
+    justify-content: flex-end;
+    padding-bottom: 3rem;
+    /* transform: translate(10px, -80px); */
+  }
+  .icon-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .black-bar-3 {
+    width: 5px;
+    height: 90px;
+    background-color: black;
+    transform: translate(-33rem, -60rem);
+    position: relative;
+  }
+  .black-bar-4 {
+    width: 90px;
+    height: 5px;
+    background-color: black;
+    transform: translate(-30.33rem, -60rem);
+    position: relative;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding-top: 100px;
+  }
+  .about-me-column {
+    margin-bottom: 0;
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 60px;
+  }
+  .about-me {
+    font-size: 6.5rem;
+  }
+  .welcome-statement {
+    font-size: 25px;
+    margin-bottom: 2rem;
+    text-align: center;
+    /* transform: translate(150px, -430px); */
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2rem;
+    padding-top: 3rem;
+  }
+  .description-text {
+    font-size: 20px;
+    width: 90%;
+    max-width: 550px;
+    text-align: start;
+  }
+  .description-column {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .headshot {
+    width: 40%;
+    height: auto;
+    z-index: 2;
+  }
   .loading-image {
     background-color: grey;
     width: 400px;
@@ -193,19 +197,19 @@ h1 {
     justify-content: center;
   }
   .yellow-box {
-    width: 900px;
+    width: 95%;
+    max-width: 900px;
     height: 900px;
     background-color: #f0c419;
     transform: translate(0px, -2rem);
     z-index: 1;
     display: flex;
-
     align-items: center;
     flex-direction: row;
   }
   .yellow-box-row {
     max-width: 900px;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
   }
@@ -238,7 +242,7 @@ h1 {
   .icon-column {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 200px;
     height: 100%;
     justify-content: flex-start;
     padding-top: 16rem;

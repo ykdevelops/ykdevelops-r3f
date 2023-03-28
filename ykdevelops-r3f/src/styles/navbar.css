@@ -101,18 +101,17 @@
   }
   .ham-icon {
     background-image: url(/src/assets/icons/menu.svg);
-    height: 43px;
-    width: 43px;
-    transform: translateY(12px);
+    background-repeat: no-repeat;
+    height: 33px;
+    width: 33px;
     transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
     margin-right: 20px;
+    transform: translateY(39px);
   }
   .ham-icon-active {
-    background-image: url(/src/assets/icons/menu.svg);
-    height: 43px;
-    width: 43px;
-    transform: translateY(12px);
+    height: 33px;
+    width: 33px;
     box-shadow: 0 0 10px rgb(135, 135, 135);
     cursor: pointer;
     transition: box-shadow 0.3s ease-in-out;
@@ -240,7 +239,6 @@
     cursor: pointer;
   }
   .ham-icon-active {
-    background-image: url(/src/assets/icons/menu.svg);
     height: 23px;
     width: 23px;
     transform: translateY(12px);
