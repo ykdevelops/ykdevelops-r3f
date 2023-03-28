@@ -4,6 +4,8 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaYoutubeSquare } from "react-icons/fa";
+import { AiFillFilePdf } from "react-icons/ai";
+import currentFile from '../assets/videos/resume.pdf';
 import { Suspense } from 'react';
 
 const About = () => {
@@ -23,9 +25,10 @@ const About = () => {
             <div className='yellow-box-row'>
                 <div className='yellow-box'>
                     <div className='icon-column' >
-                        <a href="https://linkedin.com/in/ykdevelops" className='icon-row'><FaLinkedin className="about-social-icon" /> </a>
-                        <a href="https://github.com/ykdevelops" className='icon-row'><FaGithubSquare className="about-social-icon" /></a>
-                        <a href="https://www.youtube.com/channel/UCRIft9RM1NOq6m0MIJeiJJg" className='icon-row'><FaYoutubeSquare className="about-social-icon" /></a>
+                        <a href={currentFile} className='icon-row' target="_blank" rel="noreferrer"><AiFillFilePdf className="about-social-icon" /> </a>
+                        <a href="https://linkedin.com/in/ykdevelops" className='icon-row' target="_blank" rel="noreferrer"><FaLinkedin className="about-social-icon" /> </a>
+                        <a href="https://github.com/ykdevelops" className='icon-row' target="_blank" rel="noreferrer"><FaGithubSquare className="about-social-icon" /></a>
+                        <a href="https://www.youtube.com/channel/UCRIft9RM1NOq6m0MIJeiJJg" className='icon-row' target="_blank" rel="noreferrer"><FaYoutubeSquare className="about-social-icon" /></a>
                     </div>
                     <div className='description-column'>
                         <p className='description-text'>

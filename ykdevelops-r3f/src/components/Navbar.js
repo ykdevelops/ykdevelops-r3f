@@ -39,11 +39,11 @@ export default function Navbar() {
                 </div>
                 <div className='head-dropdown'>
                     <div
-                        className={`ham-icon ${isActive ? 'ham-icon-active' : ''}`}
+                        className={`ham-icon ${isOpen ? 'ham-icon-active' : ''}`}
                         onClick={() => handleDropdownClick()}
                     />
                     <div className={`hamburger-menu ${isOpen ? 'open' : ''}`}>
-                        <HamburgerList />
+                        <HamburgerList toggle={() => setOpen(false)} />
                     </div>
                 </div>
             </div>

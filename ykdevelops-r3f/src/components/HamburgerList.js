@@ -9,16 +9,16 @@ export default function HamburgerList(props) {
 
     return (
         <div className="hamburger">
-            <Link className={classNames('dropdown-link', { active: active === 'about' })} to="/about">
+            <Link className={classNames('dropdown-link', { active: active === 'about' })} to="/about" onClick={() => props.toggle()}>
                 <div className='ham-item'> About</div>
             </Link>
-            <Link className={classNames('dropdown-link', { active: active === 'resume' })} to="/resume">
+            {/* <Link className={classNames('dropdown-link', { active: active === 'resume' })} to="/resume" onClick={() => props.toggle()}>
                 <div className='ham-item'>Resume</div>
-            </Link>
-            <Link className={classNames('dropdown-link', { active: active === 'projects' })} to="/projects">
+            </Link> */}
+            {/* <Link className={classNames('dropdown-link', { active: active === 'projects' })} to="/projects" onClick={() => props.toggle()}>
                 <div className='ham-item'>Projects</div>
-            </Link>
-            <Link className={classNames('dropdown-link', { active: active === 'studio' })} to="/">
+            </Link> */}
+            <Link className={classNames('dropdown-link', { active: active === 'studio' })} to="/" onClick={() => props.toggle()}>
                 <div className='ham-item'>Virtual Studio</div>
             </Link>
         </div>
