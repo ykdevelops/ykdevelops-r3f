@@ -38,10 +38,6 @@ const About = () => {
 
                 </div>
             </div>
-            <div className='black-bar-3'></div>
-            <div className='black-bar-4'></div>
-
-
         </div>
     );
 };
