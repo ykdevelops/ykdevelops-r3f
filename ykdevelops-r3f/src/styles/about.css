@@ -53,6 +53,15 @@
     height: 550px;
     z-index: 2;
   }
+  .headshot:hover::after {
+    content: "Your text here";
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    left: calc(100% + 10px);
+    top: calc(100% + 10px);
+    z-index: 1111111111111;
+  }
   .headshot-row {
     width: 100%;
     max-width: 1000px;
@@ -94,6 +103,16 @@
     border-radius: 5%;
     box-shadow: 0 0 5px 0px rgba(67, 67, 67, 0.8);
   }
+  .about-social-icon:hover::before {
+    content: "Your text here";
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    left: calc(100% + 10px);
+    top: calc(100% + 10px);
+    z-index: 1111111111111111111111111;
+  }
+
   .icon-row {
     display: flex;
     flex-direction: row;
@@ -234,6 +253,7 @@
     border-radius: 5%;
     box-shadow: 0 0 5px 0px rgba(67, 67, 67, 0.8);
   }
+
   .icon-row {
     display: flex;
     flex-direction: row;

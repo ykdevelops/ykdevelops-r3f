@@ -25,10 +25,12 @@ const About = () => {
             <div className='yellow-box-row'>
                 <div className='yellow-box'>
                     <div className='icon-column' >
-                        <a href={currentFile} className='icon-row' target="_blank" rel="noreferrer"><AiFillFilePdf className="about-social-icon" /> </a>
-                        <a href="https://linkedin.com/in/ykdevelops" className='icon-row' target="_blank" rel="noreferrer"><FaLinkedin className="about-social-icon" /> </a>
-                        <a href="https://github.com/ykdevelops" className='icon-row' target="_blank" rel="noreferrer"><FaGithubSquare className="about-social-icon" /></a>
-                        <a href="https://www.youtube.com/channel/UCRIft9RM1NOq6m0MIJeiJJg" className='icon-row' target="_blank" rel="noreferrer"><FaYoutubeSquare className="about-social-icon" /></a>
+                        <abbr title="My Resume"><a href={currentFile} className='icon-row' target="_blank" rel="noreferrer"><AiFillFilePdf className="about-social-icon" /> </a></abbr>
+                        <abbr title="My LinkedIn"> <a href="https://linkedin.com/in/ykdevelops" className='icon-row' target="_blank" rel="noreferrer"><FaLinkedin className="about-social-icon" /> </a></abbr>
+                        <abbr title="My Github"><a href="https://github.com/ykdevelops" className='icon-row' target="_blank" rel="noreferrer"><FaGithubSquare className="about-social-icon" /></a></abbr>
+                        <abbr title="My Youtube"><a href="https://www.youtube.com/channel/UCRIft9RM1NOq6m0MIJeiJJg" className='icon-row' target="_blank" rel="noreferrer"><FaYoutubeSquare className="about-social-icon" /></a></abbr>
+
+
                     </div>
                     <div className='description-column'>
                         <p className='description-text'>
