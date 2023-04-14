@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/about.css';
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
-import { FaTwitterSquare } from "react-icons/fa";
 import { FaYoutubeSquare } from "react-icons/fa";
 import { AiFillFilePdf } from "react-icons/ai";
 import currentFile from '../assets/videos/resume.pdf';
@@ -14,7 +13,7 @@ const About = () => {
 
             <div className='headshot-row'>
                 <Suspense fallback={<div className='loading-image'></div>}>
-                    <img className='headshot' src="/headshot.jpeg" alt="headshot" />
+                    <img className='headshot' src="/aboutImage.png" alt="headshot" />
                 </Suspense>
                 <h2 className='welcome-statement'>
                     <div>Hello,</div>
@@ -37,7 +36,7 @@ const About = () => {
                             As a developer with over a year of experience, I specialize in creating responsive web applications using Javascript frameworks like React and Vue. I am passionate about staying up-to-date with the latest online technologies and using them to create innovative and engaging user experiences.
                         </p>
                         <p className='description-text'>
-                            Recently, I have been exploring React Three Fiber and am excited about the endless possibilities it presents for creating visually stunning web applications. My commitment to delivering high-quality work is second to none, and I am confident that my skills and expertise will be a valuable asset to your team.
+                            Recently, I have also been diving into Next.js, and I am enthusiastic about the potential it offers for building performant, scalable, and feature-rich web applications.
                         </p>
                     </div>
 

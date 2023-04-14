@@ -3,13 +3,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: #e2dfdd;
     height: 100vh;
     width: 100vw;
     top: 0;
     left: 0;
     position: absolute;
-    padding-top: 150px;
+    padding-top: 50px;
     border: none;
   }
   .about-me-column {
@@ -30,12 +30,13 @@
     font-size: 3.5rem;
     margin-bottom: 2rem;
     text-align: center;
-    /* transform: translate(150px, -430px); */
+    transform: translateX(-90px);
     z-index: 3;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 2rem;
+    justify-content: center;
+    padding-left: 0rem;
     padding-top: 3rem;
   }
   .description-text {
@@ -49,19 +50,11 @@
     /* transform: translateY(-80px); */
   }
   .headshot {
-    width: 400px;
-    height: 550px;
-    z-index: 2;
+    width: 600px;
+    height: 600px;
+    z-index: 0;
   }
-  .headshot:hover::after {
-    content: "Your text here";
-    color: black;
-    font-size: 20px;
-    position: absolute;
-    left: calc(100% + 10px);
-    top: calc(100% + 10px);
-    z-index: 1111111111111;
-  }
+
   .headshot-row {
     width: 100%;
     max-width: 1000px;
@@ -71,11 +64,10 @@
   .yellow-box {
     width: 900px;
     height: 900px;
-    background-color: #f0c419;
+    background-color: transparent;
     transform: translate(0px, -250px);
     z-index: 1;
     display: flex;
-
     align-items: center;
     flex-direction: row;
   }
@@ -99,7 +91,7 @@
     height: 3rem;
     margin: 0px 20px 0px 20px;
     fill: black;
-    background-color: #f0d460;
+
     border-radius: 5%;
     box-shadow: 0 0 5px 0px rgba(67, 67, 67, 0.8);
   }
@@ -122,9 +114,9 @@
   .icon-column {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 300px;
     height: 100%;
-    justify-content: flex-end;
+    justify-content: center;
     padding-bottom: 3rem;
     /* transform: translate(10px, -80px); */
   }
@@ -152,7 +144,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: #e2dfdd;
     height: 100vh;
     width: 100vw;
     top: 0;
@@ -183,8 +175,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 2vw;
     padding-top: 3rem;
+    transform: translateX(-25px);
   }
   .description-text {
     font-size: 20px;
@@ -200,14 +192,14 @@
     padding-top: 4rem;
   }
   .headshot {
-    width: 40vw;
-    height: auto;
-    z-index: 2;
+    width: 200px;
+    height: 200px;
+    z-index: 0;
   }
   .loading-image {
     background-color: grey;
-    width: 400px;
-    height: 550px;
+    width: 200px;
+    height: 200px;
   }
   .headshot-row {
     width: 100%;
@@ -220,7 +212,7 @@
     width: 95%;
     max-width: 600px;
     max-height: 900px;
-    background-color: #f0c419;
+    background-color: transparent;
     transform: translate(0px, -2rem);
     z-index: 1;
     display: flex;
@@ -264,7 +256,7 @@
     display: flex;
     flex-direction: column;
     width: 200px;
-    justify-content: flex-end;
+    justify-content: center;
     height: 100%;
   }
   .icon-title {

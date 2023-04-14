@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState, Suspense, useCallback } from 'react';
-import myModel from '../../assets/models/deskScene13.gltf';
+import myModel from '../../assets/models/deskScene20.gltf';
 import '../../styles/loader.css'
 import Resume from './Resume'
 import GithubVideo from './GithubVideo';
@@ -86,8 +86,6 @@ export default function CanvasR3F() {
                         </Bounds>
                     </Suspense>
                     <OrbitControls makeDefault minPolarAngle={0} maxPolarAngle={Math.PI / 1.75} position={[4, 0, 0]} />
-
-
                     <ambientLight intensity={0.5} />
                     <pointLight color={0xffffff} intensity={0.8} position={[0, 5, 0]} />
                     <pointLight color={0xffffff} intensity={0.5} position={[5, 5, 0]} />

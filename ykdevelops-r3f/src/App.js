@@ -16,10 +16,8 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route path="/" element={<CanvasR3F />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/" element={<About />} />
+            <Route path="/studio" element={<CanvasR3F />} />
             <Route path="/comingSoon" element={<ComingSoon />} />
             <Route element={<NotFound />} />
           </Routes>
