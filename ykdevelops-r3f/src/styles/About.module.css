@@ -1,5 +1,5 @@
 @media only screen and (min-width: 951px) {
-  .about-page {
+  .aboutPage {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,7 @@
     padding-top: 50px;
     border: none;
   }
-  .about-me-column {
+  .aboutMeColumn {
     margin-bottom: 0;
     text-align: center;
     width: 100%;
@@ -23,10 +23,10 @@
     justify-content: flex-start;
     padding-bottom: 60px;
   }
-  .about-me {
+  .aboutMe {
     font-size: 6.5rem;
   }
-  .welcome-statement {
+  .welcomeStatement {
     font-size: 3.5rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -39,7 +39,7 @@
     padding-left: 0rem;
     padding-top: 3rem;
   }
-  .description-text {
+  .descriptionText {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -55,13 +55,13 @@
     z-index: 0;
   }
 
-  .headshot-row {
+  .headshotRow {
     width: 100%;
     max-width: 1000px;
     display: flex;
     flex-direction: row;
   }
-  .yellow-box {
+  .yellowBox {
     width: 900px;
     height: 900px;
     background-color: transparent;
@@ -71,7 +71,7 @@
     align-items: center;
     flex-direction: row;
   }
-  .yellow-box-row {
+  .yellowBoxRow {
     max-width: 600px;
     width: 100%;
   }
@@ -80,13 +80,13 @@
     margin: 0;
     font-size: 6.5rem;
   }
-  .about-social-icon {
+  .aboutSocialIcon {
     width: 3rem;
     height: 3rem;
     margin: 0px 20px 0px 20px;
     fill: black;
   }
-  .about-social-icon:hover {
+  .aboutSocialIcon:hover {
     width: 3rem;
     height: 3rem;
     margin: 0px 20px 0px 20px;
@@ -95,7 +95,7 @@
     border-radius: 5%;
     box-shadow: 0 0 5px 0px rgba(67, 67, 67, 0.8);
   }
-  .about-social-icon:hover::before {
+  .aboutSocialIcon:hover::before {
     content: "Your text here";
     color: black;
     font-size: 20px;
@@ -105,13 +105,13 @@
     z-index: 1111111111111111111111111;
   }
 
-  .icon-row {
+  .iconRow {
     display: flex;
     flex-direction: row;
     padding-bottom: 1rem;
     cursor: pointer;
   }
-  .icon-column {
+  .iconColumn {
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -120,18 +120,18 @@
     padding-bottom: 3rem;
     /* transform: translate(10px, -80px); */
   }
-  .icon-title {
+  .iconTitle {
     font-size: 1.5rem;
     font-weight: bold;
   }
-  .black-bar-3 {
+  .blackBar3 {
     width: 5px;
     height: 90px;
     background-color: black;
     transform: translate(-33rem, -60rem);
     position: relative;
   }
-  .black-bar-4 {
+  .blackBar4 {
     width: 90px;
     height: 5px;
     background-color: black;
@@ -140,7 +140,7 @@
   }
 }
 @media only screen and (max-width: 950px) {
-  .about-page {
+  .aboutPage {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,7 +152,7 @@
     position: absolute;
     padding-top: 100px;
   }
-  .about-me-column {
+  .aboutMeColumn {
     margin-bottom: 0;
     text-align: center;
     width: 100%;
@@ -163,10 +163,10 @@
     justify-content: flex-start;
     padding-bottom: 60px;
   }
-  .about-me {
+  .aboutMe {
     font-size: 6.5rem;
   }
-  .welcome-statement {
+  .welcomeStatement {
     font-size: 7vw;
     margin-bottom: 2rem;
     text-align: center;
@@ -178,13 +178,13 @@
     padding-top: 3rem;
     transform: translateX(-25px);
   }
-  .description-text {
+  .descriptionText {
     font-size: 20px;
     width: 90%;
     max-width: 550px;
     text-align: start;
   }
-  .description-column {
+  .descriptionColumn {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -196,19 +196,19 @@
     height: 200px;
     z-index: 0;
   }
-  .loading-image {
+  .loadingImage {
     background-color: grey;
     width: 200px;
     height: 200px;
   }
-  .headshot-row {
+  .headshotRow {
     width: 100%;
     max-width: 900px;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .yellow-box {
+  .yellowBox {
     width: 95%;
     max-width: 600px;
     max-height: 900px;
@@ -219,7 +219,7 @@
     align-items: center;
     flex-direction: row;
   }
-  .yellow-box-row {
+  .yellowBoxRow {
     max-width: 900px;
     width: 100%;
     display: flex;
@@ -230,13 +230,13 @@
     margin: 0;
     font-size: 6.5rem;
   }
-  .about-social-icon {
+  .aboutSocialIcon {
     width: 3rem;
     height: 3rem;
     margin: 0px 20px 0px 20px;
     fill: black;
   }
-  .about-social-icon:hover {
+  .aboutSocialIcon:hover {
     width: 3rem;
     height: 3rem;
     margin: 0px 20px 0px 20px;
@@ -246,29 +246,29 @@
     box-shadow: 0 0 5px 0px rgba(67, 67, 67, 0.8);
   }
 
-  .icon-row {
+  .iconRow {
     display: flex;
     flex-direction: row;
     padding-bottom: 1rem;
     cursor: pointer;
   }
-  .icon-column {
+  .iconColumn {
     display: flex;
     flex-direction: column;
     width: 200px;
     justify-content: center;
     height: 100%;
   }
-  .icon-title {
+  .iconTitle {
     font-size: 1.5rem;
     font-weight: bold;
   }
-  .black-bar-3 {
+  .blackBar3 {
     width: 50px;
     height: 60px;
     background-color: black;
   }
-  .black-bar-4 {
+  .blackBar4 {
     width: 60px;
     height: 50px;
     background-color: black;
